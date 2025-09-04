@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { 
   CheckCircleIcon,
@@ -184,15 +183,7 @@ const ForStartups = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>For Startups - Ravora Ventures</title>
-        <meta name="description" content="Apply to Ravora Ventures for funding, mentorship, and growth acceleration. Learn about our application process and startup support programs." />
-        <meta property="og:title" content="For Startups - Ravora Ventures" />
-        <meta property="og:description" content="Apply to Ravora Ventures for funding, mentorship, and growth acceleration. Learn about our application process and startup support programs." />
-      </Helmet>
-
-      {/* Hero Section */}
+    <>{/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-light-gray via-white to-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

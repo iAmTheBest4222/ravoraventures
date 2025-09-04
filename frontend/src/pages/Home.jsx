@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
@@ -74,13 +73,6 @@ const Home = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Ravora Ventures - Where Ideas Meet Capital</title>
-        <meta name="description" content="Empowering entrepreneurs with the right tools, networks, and knowledge to create businesses that last. Join India's most trusted startup ecosystem." />
-        <meta property="og:title" content="Ravora Ventures - Where Ideas Meet Capital" />
-        <meta property="og:description" content="Empowering entrepreneurs with the right tools, networks, and knowledge to create businesses that last." />
-        <meta property="og:type" content="website" />
-      </Helmet>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-light-gray via-white to-light-gray overflow-hidden">

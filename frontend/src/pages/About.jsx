@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { 
   HeartIcon,
@@ -95,15 +94,7 @@ const About = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>About Us - Ravora Ventures</title>
-        <meta name="description" content="Learn about Ravora Ventures' mission, vision, and the team behind India's most trusted startup ecosystem." />
-        <meta property="og:title" content="About Us - Ravora Ventures" />
-        <meta property="og:description" content="Learn about Ravora Ventures' mission, vision, and the team behind India's most trusted startup ecosystem." />
-      </Helmet>
-
-      {/* Hero Section */}
+    <>{/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-light-gray via-white to-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

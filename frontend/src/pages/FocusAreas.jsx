@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { 
   GlobeAltIcon,
@@ -166,15 +165,7 @@ const FocusAreas = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>Focus Areas - Ravora Ventures</title>
-        <meta name="description" content="Explore our investment focus areas including Technology & AI, Clean Energy, FinTech, HealthTech, and Consumer sectors." />
-        <meta property="og:title" content="Focus Areas - Ravora Ventures" />
-        <meta property="og:description" content="Explore our investment focus areas including Technology & AI, Clean Energy, FinTech, HealthTech, and Consumer sectors." />
-      </Helmet>
-
-      {/* Hero Section */}
+    <>{/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-light-gray via-white to-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

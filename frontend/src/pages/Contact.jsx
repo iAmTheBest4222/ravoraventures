@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { 
   EnvelopeIcon,
@@ -119,15 +118,7 @@ const Contact = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>Contact Us - Ravora Ventures</title>
-        <meta name="description" content="Get in touch with Ravora Ventures. Contact us for investment opportunities, partnerships, or general inquiries." />
-        <meta property="og:title" content="Contact Us - Ravora Ventures" />
-        <meta property="og:description" content="Get in touch with Ravora Ventures. Contact us for investment opportunities, partnerships, or general inquiries." />
-      </Helmet>
-
-      {/* Hero Section */}
+    <>{/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-light-gray via-white to-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

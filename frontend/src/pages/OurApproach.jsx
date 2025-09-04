@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { 
   MagnifyingGlassIcon,
@@ -162,15 +161,7 @@ const OurApproach = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>Our Approach - Ravora Ventures</title>
-        <meta name="description" content="Learn about our 6-step process for supporting startups from discovery to sustainability and long-term success." />
-        <meta property="og:title" content="Our Approach - Ravora Ventures" />
-        <meta property="og:description" content="Learn about our 6-step process for supporting startups from discovery to sustainability and long-term success." />
-      </Helmet>
-
-      {/* Hero Section */}
+    <>{/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-light-gray via-white to-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

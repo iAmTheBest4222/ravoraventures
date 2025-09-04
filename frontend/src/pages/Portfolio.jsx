@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { 
   GlobeAltIcon,
@@ -209,15 +208,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>Portfolio - Ravora Ventures</title>
-        <meta name="description" content="Explore our portfolio of innovative companies across FinTech, CleanTech, HealthTech, EdTech, and AI/ML sectors." />
-        <meta property="og:title" content="Portfolio - Ravora Ventures" />
-        <meta property="og:description" content="Explore our portfolio of innovative companies across FinTech, CleanTech, HealthTech, EdTech, and AI/ML sectors." />
-      </Helmet>
-
-      {/* Hero Section */}
+    <>{/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-light-gray via-white to-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

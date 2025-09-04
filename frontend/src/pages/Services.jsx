@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { 
   LightBulbIcon,
@@ -132,15 +131,7 @@ const Services = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>Services - Ravora Ventures</title>
-        <meta name="description" content="Comprehensive services for startups including ideation, mentorship, funding, scaling, and long-term growth support." />
-        <meta property="og:title" content="Services - Ravora Ventures" />
-        <meta property="og:description" content="Comprehensive services for startups including ideation, mentorship, funding, scaling, and long-term growth support." />
-      </Helmet>
-
-      {/* Hero Section */}
+    <>{/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-light-gray via-white to-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { 
   ChartBarIcon,
@@ -206,15 +205,7 @@ const ForInvestors = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>For Investors - Ravora Ventures</title>
-        <meta name="description" content="Join Ravora Ventures as an investor. Access exclusive investment opportunities, co-investment deals, and professional portfolio management." />
-        <meta property="og:title" content="For Investors - Ravora Ventures" />
-        <meta property="og:description" content="Join Ravora Ventures as an investor. Access exclusive investment opportunities, co-investment deals, and professional portfolio management." />
-      </Helmet>
-
-      {/* Hero Section */}
+    <>{/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-light-gray via-white to-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
