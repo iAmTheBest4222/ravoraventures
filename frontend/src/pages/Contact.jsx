@@ -12,7 +12,7 @@ import {
 
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
-import { contactAPI } from '../utils/api';
+// import { contactAPI } from '../utils/api'; // Commented out since we're using simulated responses
 
 const Contact = () => {
   const [formData, setFormData] = useState({

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, CheckCircleIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline';
-import { newsletterAPI } from '../../utils/api';
+// import { newsletterAPI } from '../../utils/api'; // Commented out since we're using simulated responses
 import Button from './Button';
 
 const NewsletterSignup = ({ className = '' }) => {
