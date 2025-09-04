@@ -40,17 +40,16 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await contactAPI.submitContact(formData);
-      if (response.data.status === 'success') {
-        setSubmitStatus('success');
-        setFormData({
-          name: '',
-          email: '',
-          company: '',
-          type: 'startup',
-          message: '',
-        });
-      }
+      // For now, simulate success since backend isn't deployed yet
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      setSubmitStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        type: 'startup',
+        message: '',
+      });
     } catch (error) {
       console.error('Contact form error:', error);
       setSubmitStatus('error');

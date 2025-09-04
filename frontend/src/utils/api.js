@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://ravoraventures-backend.vercel.app/api';
+// For now, we'll use a placeholder URL since backend isn't deployed yet
+const API_BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
