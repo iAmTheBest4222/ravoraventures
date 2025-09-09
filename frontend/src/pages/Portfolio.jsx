@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 const Portfolio = () => {
   return (
     <div style={{padding: '4rem', textAlign: 'center'}}>

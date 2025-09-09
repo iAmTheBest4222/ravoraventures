@@ -1,11 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  CheckCircleIcon,
-  ChartBarIcon,
-  HeartIcon,
-  RocketLaunchIcon
-} from '@heroicons/react/24/outline';
+// Unused icon imports removed to resolve ESLint errors
 
 function OurApproach() {
   // ...existing code...

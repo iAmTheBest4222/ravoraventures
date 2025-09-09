@@ -8,28 +8,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 const Home = () => {
-  const features = [
-    {
-      icon: LightBulbIcon,
-      title: 'Ideation & Strategy',
-      description: 'Transform your ideas into viable business models with our strategic guidance.',
-    },
-    {
-      icon: UsersIcon,
-      title: 'Mentorship & Guidance',
-      description: 'Learn from industry experts and successful entrepreneurs.',
-    },
-    {
-      icon: CurrencyDollarIcon,
-      title: 'Funding & Investment',
-      description: 'Access capital from our network of investors and funding partners.',
-    },
-    {
-      icon: RocketLaunchIcon,
-      title: 'Scaling & Acceleration',
-      description: 'Scale your startup with our proven acceleration programs.',
-    },
-  ];
+  // features array removed as it is unused
 
   // ...existing code...
 
