@@ -48,14 +48,17 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
+            className="flex flex-wrap justify-center items-center gap-8 max-w-3xl mx-auto py-8"
           >
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-charcoal mb-2">
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center bg-white rounded-xl shadow-md px-8 py-6 min-w-[180px] min-h-[100px] mx-2 my-2"
+              >
+                <div className="text-3xl md:text-4xl font-bold text-orange mb-1 text-center">
                   {stat.number}
                 </div>
-                <div className="text-medium-gray text-sm md:text-base">
+                <div className="text-medium-gray text-base md:text-lg font-medium text-center">
                   {stat.label}
                 </div>
               </div>

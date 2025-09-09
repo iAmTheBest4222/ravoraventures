@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   EnvelopeIcon, 
-  ArrowUpIcon 
+  ArrowUpIcon, 
+  MapPinIcon 
 } from '@heroicons/react/24/outline';
 
 const Footer = () => {
@@ -41,9 +42,9 @@ const Footer = () => {
     <footer className="bg-navy-blue text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-12">
           {/* Company Info */}
-          <div className="lg:col-span-1">
+          <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -54,11 +55,15 @@ const Footer = () => {
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Where Ideas Meet Capital. Where Startups Become Stories.
               </p>
-              <div className="space-y-3">
+              <div className="flex flex-col items-center md:items-start gap-3">
                 {/* Address removed as per requirements */}
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center gap-2 justify-center md:justify-start">
                   <EnvelopeIcon className="h-5 w-5 text-orange" />
                   <span className="text-gray-300">info@ravoraventures.com</span>
+                </div>
+                <div className="flex items-center gap-2 justify-center md:justify-start">
+                  <MapPinIcon className="h-5 w-5 text-orange" />
+                  <span className="text-gray-300">India, New Delhi</span>
                 </div>
                 {/* Phone number removed as per requirements */}
               </div>
@@ -151,6 +156,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700">

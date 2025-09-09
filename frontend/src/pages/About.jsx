@@ -160,46 +160,19 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              {/* 50+ Portfolio Companies stat removed as per requirements */}
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-orange mb-2">₹500Cr+</div>
-              <div className="text-gray-300">Capital Deployed</div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-orange mb-2">15+</div>
-              <div className="text-gray-300">Years Experience</div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-orange mb-2">95%</div>
-              <div className="text-gray-300">Success Rate</div>
-            </motion.div>
+          <div className="flex flex-wrap justify-center items-center gap-8 max-w-3xl mx-auto py-4">
+            <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow-md px-8 py-6 min-w-[180px] min-h-[100px] mx-2 my-2">
+              <div className="text-3xl md:text-4xl font-bold text-orange mb-1 text-center">₹500Cr+</div>
+              <div className="text-medium-gray text-base md:text-lg font-medium text-center">Capital Deployed</div>
+            </div>
+            <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow-md px-8 py-6 min-w-[180px] min-h-[100px] mx-2 my-2">
+              <div className="text-3xl md:text-4xl font-bold text-orange mb-1 text-center">15+</div>
+              <div className="text-medium-gray text-base md:text-lg font-medium text-center">Years Experience</div>
+            </div>
+            <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow-md px-8 py-6 min-w-[180px] min-h-[100px] mx-2 my-2">
+              <div className="text-3xl md:text-4xl font-bold text-orange mb-1 text-center">95%</div>
+              <div className="text-medium-gray text-base md:text-lg font-medium text-center">Success Rate</div>
+            </div>
           </div>
         </div>
       </section>
