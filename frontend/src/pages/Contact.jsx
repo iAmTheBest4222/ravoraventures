@@ -61,12 +61,9 @@ const Contact = () => {
     {
       icon: MapPinIcon,
       title: 'Office Address',
-      details: [
-  'Ravora Ventures',
-  '123 Business District',
-  'New Delhi, 110001',
-  'India'
-      ],
+    details: [
+  // Address removed as per requirements
+    ],
     },
     {
       icon: PhoneIcon,
@@ -370,9 +367,7 @@ const Contact = () => {
                 <MapPinIcon className="h-16 w-16 text-orange mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Interactive Map</h3>
                 <p className="text-medium-gray">Map integration would go here</p>
-                <p className="text-sm text-medium-gray mt-2">
-                  Ravora Ventures, 123 Business District, New Delhi, 110001
-                </p>
+                {/* Address removed as per requirements */}
               </div>
             </div>
           </Card>

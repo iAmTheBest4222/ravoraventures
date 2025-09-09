@@ -107,7 +107,7 @@ const About = () => {
               About Ravora Ventures
             </h1>
             <p className="text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
-              We are more than just investors. We are partners in your entrepreneurial journey, 
+              We are more than just investors. We are partners in your success, 
               committed to building businesses that last and create lasting impact.
             </p>
           </motion.div>
@@ -194,80 +194,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Our Journey section removed as per requirements */}
+  {/* Timeline (Our Journey) section removed as per requirements */}
 
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-orange/20"></div>
-            
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`flex items-center ${
-                    index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                  }`}
-                >
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <Card className="p-6">
-                      <div className="text-orange font-bold text-lg mb-2">{item.year}</div>
-                      <h3 className="text-xl font-semibold text-charcoal mb-3">{item.title}</h3>
-                      <p className="text-medium-gray">{item.description}</p>
-                    </Card>
-                  </div>
-                  
-                  {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange rounded-full border-4 border-white shadow-lg"></div>
-                  
-                  <div className="w-1/2"></div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-20 bg-light-gray">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-medium-gray max-w-3xl mx-auto">
-              Our diverse team brings together decades of experience in venture capital, technology, operations, and strategy to support founders at every stage.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center">
-                <div className="text-6xl mb-4">{member.image}</div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-orange font-medium mb-3">{member.position}</p>
-                <p className="text-medium-gray text-sm leading-relaxed">
-                  {member.description}
-                </p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+  {/* Meet Our Team section removed as per requirements */}
 
       {/* Stats */}
       <section className="py-20 bg-navy-blue text-white">

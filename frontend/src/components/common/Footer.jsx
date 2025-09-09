@@ -34,9 +34,8 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'LinkedIn', href: '#' },
-    { name: 'Twitter', href: '#' },
     { name: 'Instagram', href: '#' },
-    { name: 'YouTube', href: '#' },
+    { name: 'Facebook', href: '#' },
   ];
 
   return (
@@ -57,10 +56,7 @@ const Footer = () => {
                 Where Ideas Meet Capital. Where Startups Become Stories.
               </p>
               <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <MapPinIcon className="h-5 w-5 text-orange" />
-                  <span className="text-gray-300">123 Business District, New Delhi, India</span>
-                </div>
+                {/* Address removed as per requirements */}
                 <div className="flex items-center space-x-3">
                   <EnvelopeIcon className="h-5 w-5 text-orange" />
                   <span className="text-gray-300">info@ravoraventures.com</span>
