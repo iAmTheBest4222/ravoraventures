@@ -129,21 +129,7 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="text-center group">
-                <div className="w-16 h-16 bg-orange/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-orange/20 transition-colors duration-300">
-                  <feature.icon className="h-8 w-8 text-orange" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-4">
-                  {feature.title}
-                </h3>
-                <p className="text-medium-gray leading-relaxed">
-                  {feature.description}
-                </p>
-              </Card>
-            ))}
-          </div>
+          {/* Card feature grid removed as per requirements and to fix build error */}
         </div>
       </section>
 
