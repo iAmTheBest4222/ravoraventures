@@ -185,3 +185,5 @@ The website will be fully functional with:
 - ✅ All 9 pages accessible
 - ✅ Smooth animations
 - ✅ SEO optimized
+
+

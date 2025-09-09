@@ -140,3 +140,5 @@ portfolioSchema.index({ 'location.city': 1 });
 portfolioSchema.index({ createdAt: -1 });
 
 module.exports = mongoose.model('Portfolio', portfolioSchema);
+
+

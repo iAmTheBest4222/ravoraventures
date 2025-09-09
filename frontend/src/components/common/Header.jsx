@@ -23,7 +23,6 @@ const Header = () => {
     { name: 'Services', href: '/services' },
     { name: 'Focus Areas', href: '/focus' },
     { name: 'Our Approach', href: '/approach' },
-    { name: 'Portfolio', href: '/portfolio' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -71,15 +70,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link
-              to="/startups"
-              className="bg-orange text-white px-6 py-2 rounded-lg font-medium hover:bg-orange/90 transition-colors duration-200"
-            >
-              Start Your Journey
-            </Link>
-          </div>
+          {/* CTA Button removed as per requirements */}
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -121,15 +112,7 @@ const Header = () => {
                     {item.name}
                   </Link>
                 ))}
-                <div className="pt-4">
-                  <Link
-                    to="/startups"
-                    onClick={() => setIsMenuOpen(false)}
-                    className="block w-full bg-orange text-white px-6 py-2 rounded-lg font-medium text-center hover:bg-orange/90 transition-colors duration-200"
-                  >
-                    Start Your Journey
-                  </Link>
-                </div>
+                {/* Removed mobile CTA for Start Your Journey */}
               </div>
             </motion.div>
           )}
@@ -140,3 +123,4 @@ const Header = () => {
 };
 
 export default Header;
+

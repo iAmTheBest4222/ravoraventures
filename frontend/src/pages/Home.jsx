@@ -98,19 +98,7 @@ const Home = () => {
               networks, and knowledge to create businesses that last.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Link to="/startups">
-                <Button size="lg" className="w-full sm:w-auto">
-                  Start Your Journey
-                  <ArrowRightIcon className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/investors">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                  Join Our Network
-                </Button>
-              </Link>
-            </div>
+            {/* Removed Start Your Journey and Join Our Network CTAs as per requirements */}
           </motion.div>
 
           {/* Stats */}
@@ -190,91 +178,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Portfolio Highlights */}
-      <section className="py-20 bg-light-gray">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Our Portfolio
-            </h2>
-            <p className="text-xl text-medium-gray max-w-3xl mx-auto">
-              Discover the innovative companies we're proud to support and help grow.
-            </p>
-          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {portfolioCompanies.map((company, index) => (
-              <Card key={index} className="text-center">
-                <div className="text-4xl mb-4">{company.logo}</div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">
-                  {company.name}
-                </h3>
-                <p className="text-medium-gray text-sm mb-3">
-                  {company.description}
-                </p>
-                <span className="inline-block bg-orange/10 text-orange px-3 py-1 rounded-full text-sm font-medium">
-                  {company.industry}
-                </span>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link to="/portfolio">
-              <Button variant="secondary" size="lg">
-                View All Companies
-                <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <NewsletterSignup />
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-navy-blue text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Start Your Journey?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join hundreds of successful entrepreneurs who have built their dreams with Ravora Ventures.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/startups">
-                <Button size="lg" className="w-full sm:w-auto">
-                  Apply Now
-                  <ArrowRightIcon className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                  Get in Touch
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-    </>
+  {/* Portfolio Highlights section removed as per requirements */}
+  {/* CTA Section removed as per requirements */}
+  </>
   );
 };
 

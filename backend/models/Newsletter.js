@@ -54,3 +54,5 @@ newsletterSchema.index({ status: 1 });
 newsletterSchema.index({ subscribedAt: -1 });
 
 module.exports = mongoose.model('Newsletter', newsletterSchema);
+
+

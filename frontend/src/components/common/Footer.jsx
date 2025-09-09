@@ -18,7 +18,6 @@ const Footer = () => {
       { name: 'About Us', href: '/about' },
       { name: 'Our Approach', href: '/approach' },
       { name: 'Focus Areas', href: '/focus' },
-      { name: 'Portfolio', href: '/portfolio' },
     ],
     services: [
       { name: 'For Startups', href: '/startups' },
@@ -61,7 +60,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPinIcon className="h-5 w-5 text-orange" />
-                  <span className="text-gray-300">Delhi, India</span>
+                  <span className="text-gray-300">123 Business District, New Delhi, India</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <EnvelopeIcon className="h-5 w-5 text-orange" />
@@ -192,3 +191,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

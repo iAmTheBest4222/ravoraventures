@@ -305,33 +305,7 @@ const FocusAreas = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-navy-blue text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Building the Future Together
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              If your startup aligns with our focus areas, we'd love to learn more about your vision and how we can help you succeed.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="w-full sm:w-auto">
-                Apply for Investment
-                <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                Schedule a Meeting
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+  {/* CTA Section removed as per requirements */}
     </>
   );
 };
