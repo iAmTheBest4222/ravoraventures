@@ -43,7 +43,7 @@ const ForInvestors = () => {
     },
     {
       title: 'Follow-on Investments',
-      description: 'Additional funding rounds for existing portfolio companies',
+  description: 'Additional funding rounds for existing investments',
       amount: '₹5Cr - ₹50Cr',
       focus: 'Scaling and market leadership',
       benefits: [
@@ -166,7 +166,7 @@ const ForInvestors = () => {
     {
       metric: 'Success Rate',
       value: '95%',
-      description: 'Percentage of portfolio companies that achieved positive outcomes',
+  description: 'Percentage of investments that achieved positive outcomes',
     },
     {
       metric: 'Average Exit',
@@ -176,7 +176,7 @@ const ForInvestors = () => {
     {
       metric: 'Portfolio Value',
       value: '₹500Cr+',
-      description: 'Total value of current portfolio companies',
+  description: 'Total value of current investments',
     },
   ];
 

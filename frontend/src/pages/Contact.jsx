@@ -72,7 +72,7 @@ const Contact = () => {
       icon: PhoneIcon,
       title: 'Phone',
       details: [
-  '+91 98765 43210',
+  // Phone number removed as per requirements
   'Mon-Fri: 9AM-6PM IST'
       ],
     },

@@ -8,7 +8,6 @@ const Home = () => {
   // ...existing code...
 
   const stats = [
-    { number: '50+', label: 'Portfolio Companies' },
     { number: '₹500Cr+', label: 'Capital Deployed' },
     { number: '15+', label: 'Years Experience' },
     { number: '95%', label: 'Success Rate' },

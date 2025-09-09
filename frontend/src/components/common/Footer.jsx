@@ -66,10 +66,7 @@ const Footer = () => {
                   <EnvelopeIcon className="h-5 w-5 text-orange" />
                   <span className="text-gray-300">info@ravoraventures.com</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <PhoneIcon className="h-5 w-5 text-orange" />
-                  <span className="text-gray-300">+91 98765 43210</span>
-                </div>
+                {/* Phone number removed as per requirements */}
               </div>
             </motion.div>
           </div>

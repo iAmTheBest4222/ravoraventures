@@ -62,7 +62,7 @@ const About = () => {
     {
       year: '2024',
       title: 'Future Ready',
-      description: 'Positioned as India\'s leading venture capital firm with a portfolio of 50+ successful companies.',
+  description: 'Positioned as India\'s leading venture capital firm.',
     },
   ];
 
@@ -295,8 +295,7 @@ const About = () => {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-orange mb-2">50+</div>
-              <div className="text-gray-300">Portfolio Companies</div>
+              {/* 50+ Portfolio Companies stat removed as per requirements */}
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
