@@ -62,19 +62,18 @@ const Contact = () => {
       icon: MapPinIcon,
       title: 'Office Address',
       details: [
-        'Ravora Ventures',
-        '123 Business District',
-        'New Delhi, 110001',
-        'India'
+  'Ravora Ventures',
+  '123 Business District',
+  'New Delhi, 110001',
+  'India'
       ],
     },
     {
       icon: PhoneIcon,
       title: 'Phone',
       details: [
-        '+91 98765 43210',
-        '+91 11 2345 6789',
-        'Mon-Fri: 9AM-6PM IST'
+  '+91 98765 43210',
+  'Mon-Fri: 9AM-6PM IST'
       ],
     },
     {
@@ -381,32 +380,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-navy-blue text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Get Started?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Don't wait to turn your ideas into reality. Contact us today and let's build something amazing together.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="w-full sm:w-auto">
-                Apply for Investment
-                <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                Join Our Network
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+  {/* CTA Section removed as per requirements. Only Contact Us CTA remains elsewhere. */}
     </>
   );
 };

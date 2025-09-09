@@ -277,18 +277,15 @@ const Services = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Get Started?
+              View Our Program
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss how our services can help accelerate your startup's growth and success.
+              Explore our comprehensive program designed to accelerate your growth. Click below to view more details.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="w-full sm:w-auto">
-                Schedule a Consultation
+              <Button size="lg" className="w-full sm:w-auto" onClick={() => window.open('/program-details', '_blank')}>
+                View Program Details
                 <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                View Our Programs
               </Button>
             </div>
           </motion.div>

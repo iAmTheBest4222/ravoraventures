@@ -200,10 +200,7 @@ const ForStartups = () => {
               We provide funding, mentorship, and the support you need to scale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="w-full sm:w-auto">
-                Apply Now
-                <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
+              {/* Apply Now button removed as per requirements */}
               <Button variant="secondary" size="lg" className="w-full sm:w-auto">
                 Download Application Guide
                 <DocumentTextIcon className="ml-2 h-5 w-5" />

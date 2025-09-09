@@ -197,20 +197,7 @@ const About = () => {
       {/* Timeline */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Our Journey
-            </h2>
-            <p className="text-xl text-medium-gray max-w-3xl mx-auto">
-              From our founding to becoming a leading venture capital firm in India.
-            </p>
-          </motion.div>
+          {/* Our Journey section removed as per requirements */}
 
           <div className="relative">
             {/* Timeline Line */}
@@ -261,7 +248,7 @@ const About = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-medium-gray max-w-3xl mx-auto">
-              The experienced professionals behind Ravora Ventures' success.
+              Our diverse team brings together decades of experience in venture capital, technology, operations, and strategy to support founders at every stage.
             </p>
           </motion.div>
 
@@ -296,7 +283,7 @@ const About = () => {
               Our Impact in Numbers
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              The results speak for themselves - our portfolio companies have created significant value and impact.
+              The results speak for themselves - our companies have created significant value and impact.
             </p>
           </motion.div>
 

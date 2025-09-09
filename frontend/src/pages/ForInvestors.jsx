@@ -474,15 +474,7 @@ const ForInvestors = () => {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Join our exclusive network of investors and access curated investment opportunities with proven returns.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="w-full sm:w-auto">
-                Join Our Network
-                <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                Schedule a Meeting
-              </Button>
-            </div>
+            {/* CTAs removed as per requirements */}
           </motion.div>
         </div>
       </section>
