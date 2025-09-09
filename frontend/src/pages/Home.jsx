@@ -1,11 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  LightBulbIcon,
-  RocketLaunchIcon,
-  UsersIcon,
-  CurrencyDollarIcon
-} from '@heroicons/react/24/outline';
+// Unused icon imports removed to resolve ESLint errors
 
 const Home = () => {
   // features array removed as it is unused
