@@ -62,17 +62,11 @@ const Contact = () => {
       icon: MapPinIcon,
       title: 'Office Address',
     details: [
+      'New Delhi, India'
   // Address removed as per requirements
     ],
     },
-    {
-      icon: PhoneIcon,
-      title: 'Phone',
-      details: [
-  // Phone number removed as per requirements
-  'Mon-Fri: 9AM-6PM IST'
-      ],
-    },
+  // Phone section removed as per requirements
     {
       icon: EnvelopeIcon,
       title: 'Email',
@@ -346,31 +340,7 @@ const Contact = () => {
       {/* Map Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Visit Our Office
-            </h2>
-            <p className="text-xl text-medium-gray max-w-3xl mx-auto">
-              Located in the heart of New Delhi's business district, our office is easily accessible by public transport.
-            </p>
-          </motion.div>
-
-          <Card className="p-8">
-            <div className="bg-light-gray rounded-lg h-64 flex items-center justify-center">
-              <div className="text-center">
-                <MapPinIcon className="h-16 w-16 text-orange mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Interactive Map</h3>
-                <p className="text-medium-gray">Map integration would go here</p>
-                {/* Address removed as per requirements */}
-              </div>
-            </div>
-          </Card>
+          {/* Visit Our Office section removed as per requirements */}
         </div>
       </section>
 
