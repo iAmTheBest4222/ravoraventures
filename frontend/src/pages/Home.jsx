@@ -1,17 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { 
-  ArrowRightIcon,
   LightBulbIcon,
   RocketLaunchIcon,
   UsersIcon,
   CurrencyDollarIcon
 } from '@heroicons/react/24/outline';
-
-import Button from '../components/ui/Button';
-import Card from '../components/ui/Card';
-import NewsletterSignup from '../components/ui/NewsletterSignup';
 
 const Home = () => {
   const features = [
@@ -37,32 +31,7 @@ const Home = () => {
     },
   ];
 
-  const portfolioCompanies = [
-    {
-      name: 'FinTechX',
-      description: 'Simplifying digital payments across India',
-      industry: 'FinTech',
-      logo: '💳',
-    },
-    {
-      name: 'GreenEdge',
-      description: 'A sustainability startup reducing carbon footprints',
-      industry: 'CleanTech',
-      logo: '🌱',
-    },
-    {
-      name: 'HealthPlus',
-      description: 'Affordable telemedicine for rural communities',
-      industry: 'HealthTech',
-      logo: '🏥',
-    },
-    {
-      name: 'EduTech Pro',
-      description: 'Revolutionizing online education delivery',
-      industry: 'EdTech',
-      logo: '📚',
-    },
-  ];
+  // ...existing code...
 
   const stats = [
     { number: '50+', label: 'Portfolio Companies' },

@@ -1,21 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { 
-  GlobeAltIcon,
-  ArrowRightIcon,
-  XMarkIcon
-} from '@heroicons/react/24/outline';
-
-import Card from '../components/ui/Card';
-import Button from '../components/ui/Button';
-
 const Portfolio = () => {
-  const [selectedFilter, setSelectedFilter] = useState('All');
-  const [selectedCompany, setSelectedCompany] = useState(null);
-
-  const filters = ['All', 'FinTech', 'CleanTech', 'HealthTech', 'EdTech', 'AI/ML'];
-
-  const portfolioCompanies = [
     {
       id: 1,
       name: 'FinTechX',
@@ -180,32 +164,13 @@ const Portfolio = () => {
     },
   ];
 
-  const filteredCompanies = selectedFilter === 'All' 
-    ? portfolioCompanies 
-    : portfolioCompanies.filter(company => company.industry === selectedFilter);
-
-  const portfolioStats = [
-    {
-      title: 'Total Companies',
-      value: '50+',
-      description: 'Portfolio companies across various sectors',
-    },
-    {
-      title: 'Total Investment',
-      value: '₹500Cr+',
-      description: 'Capital deployed across all investments',
-    },
-    {
-      title: 'Average IRR',
-      value: '35%+',
-      description: 'Internal rate of return on investments',
-    },
-    {
-      title: 'Successful Exits',
-      value: '15+',
-      description: 'Companies with successful exits or IPOs',
-    },
-  ];
+    // This page content has been removed as per requirements.
+    return (
+      <div style={{padding: '4rem', textAlign: 'center'}}>
+        <h1 style={{fontSize: '2rem', fontWeight: 'bold'}}>Portfolio</h1>
+        <p>Portfolio content has been removed as per the latest site update.</p>
+      </div>
+    );
 
   return (
     <>{/* Hero Section */}
@@ -222,6 +187,4 @@ const Portfolio = () => {
   {/* CTA Section removed as per requirements */}
     </>
   );
-};
-
 export default Portfolio;
