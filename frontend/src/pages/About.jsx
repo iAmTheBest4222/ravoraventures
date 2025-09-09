@@ -33,65 +33,9 @@ const About = () => {
     },
   ];
 
-  const timeline = [
-    {
-      year: '2009',
-      title: 'Foundation',
-      description: 'Ravora Ventures was founded with a vision to democratize access to capital and mentorship for Indian entrepreneurs.',
-    },
-    {
-      year: '2012',
-      title: 'First Success',
-      description: 'Our first portfolio company achieved a successful exit, validating our investment thesis and approach.',
-    },
-    {
-      year: '2015',
-      title: 'Expansion',
-      description: 'We expanded our focus to include emerging sectors like fintech, healthtech, and cleantech.',
-    },
-    {
-      year: '2018',
-      title: 'Scale',
-      description: 'Launched our accelerator program to support early-stage startups with comprehensive mentorship.',
-    },
-    {
-      year: '2021',
-      title: 'Digital Transformation',
-      description: 'Adapted our processes for the digital age, enabling remote collaboration and virtual due diligence.',
-    },
-    {
-      year: '2024',
-      title: 'Future Ready',
-  description: 'Positioned as India\'s leading venture capital firm.',
-    },
-  ];
+  // timeline removed as it is unused
 
-  const team = [
-    {
-      name: 'Rajesh Kumar',
-      position: 'Founder & Managing Partner',
-      description: 'Former investment banker with 20+ years of experience in venture capital and private equity.',
-      image: '👨‍💼',
-    },
-    {
-      name: 'Priya Sharma',
-      position: 'Partner - Technology',
-      description: 'Ex-Google engineer and serial entrepreneur with deep expertise in emerging technologies.',
-      image: '👩‍💻',
-    },
-    {
-      name: 'Amit Patel',
-      position: 'Partner - Operations',
-      description: 'Operations expert with a track record of scaling startups from seed to IPO.',
-      image: '👨‍🔧',
-    },
-    {
-      name: 'Sneha Reddy',
-      position: 'Partner - Strategy',
-      description: 'Former McKinsey consultant specializing in market strategy and business development.',
-      image: '👩‍💼',
-    },
-  ];
+  // team removed as it is unused
 
   return (
     <>{/* Hero Section */}
