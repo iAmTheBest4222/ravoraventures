@@ -22,7 +22,7 @@ const Header = () => {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Focus Areas', href: '/focus' },
-    { name: 'Our Approach', href: '/approach' },
+  // Our Approach removed as per requirements
     { name: 'Contact', href: '/contact' },
   ];
 

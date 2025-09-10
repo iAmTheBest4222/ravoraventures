@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 // Unused icon imports removed to resolve ESLint errors
 
 function OurApproach() {
-  // ...existing code...
 
   return (
     <>
