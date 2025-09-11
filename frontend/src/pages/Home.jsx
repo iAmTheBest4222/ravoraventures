@@ -17,7 +17,7 @@ const Home = () => {
     <>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-light-gray via-white to-light-gray overflow-hidden">
+  <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-light-gray via-white to-light-gray overflow-hidden px-2 sm:px-4">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-72 h-72 bg-orange rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
@@ -25,17 +25,17 @@ const Home = () => {
           <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-success-green rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '4s' }}></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+  <div className="relative z-10 max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-7xl font-bold text-charcoal mb-6 leading-tight">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-7xl font-bold text-charcoal mb-6 leading-tight break-words">
               Where Ideas Meet
               <span className="text-orange block">Capital</span>
             </h1>
-            <p className="text-xl md:text-2xl text-medium-gray mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base xs:text-lg sm:text-xl md:text-2xl text-medium-gray mb-8 max-w-3xl mx-auto leading-relaxed break-words">
               Where Startups Become Stories. Empowering entrepreneurs with the right tools, 
               networks, and knowledge to create businesses that last.
             </p>
@@ -48,17 +48,17 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex flex-wrap justify-center items-center gap-8 max-w-3xl mx-auto py-8"
+            className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 max-w-3xl mx-auto py-4 sm:py-8"
           >
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center bg-white rounded-xl shadow-md px-8 py-6 min-w-[180px] min-h-[100px] mx-2 my-2"
+                className="flex flex-col items-center justify-center bg-white rounded-xl shadow-md px-4 py-4 sm:px-6 sm:py-6 min-w-[120px] sm:min-w-[160px] md:min-w-[180px] min-h-[80px] sm:min-h-[100px] mx-1 my-2"
               >
-                <div className="text-3xl md:text-4xl font-bold text-orange mb-1 text-center">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange mb-1 text-center">
                   {stat.number}
                 </div>
-                <div className="text-medium-gray text-base md:text-lg font-medium text-center">
+                <div className="text-medium-gray text-xs sm:text-base md:text-lg font-medium text-center">
                   {stat.label}
                 </div>
               </div>

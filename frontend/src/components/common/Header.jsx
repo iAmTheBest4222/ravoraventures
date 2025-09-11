@@ -45,7 +45,8 @@ const Header = () => {
           <Link to="/" className="flex-shrink-0">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold text-charcoal"
+              className="text-xl sm:text-2xl md:text-3xl font-bold text-charcoal tracking-tight px-2 md:px-0"
+              style={{ wordBreak: 'break-word', lineHeight: 1.1 }}
             >
               Ravora Ventures
             </motion.div>
@@ -53,7 +54,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-4 flex flex-wrap items-baseline gap-x-4 gap-y-2">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -77,11 +78,12 @@ const Header = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-charcoal hover:text-orange focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 p-2"
+              aria-label="Toggle navigation menu"
             >
               {isMenuOpen ? (
-                <XMarkIcon className="h-6 w-6" />
+                <XMarkIcon className="h-7 w-7" />
               ) : (
-                <Bars3Icon className="h-6 w-6" />
+                <Bars3Icon className="h-7 w-7" />
               )}
             </button>
           </div>
@@ -97,7 +99,7 @@ const Header = () => {
               transition={{ duration: 0.3 }}
               className="md:hidden"
             >
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg w-full min-w-[180px]">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
