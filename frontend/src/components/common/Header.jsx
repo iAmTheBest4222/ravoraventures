@@ -46,7 +46,7 @@ const Header = () => {
             <img
               alt="Ravora Ventures Logo"
               className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 drop-shadow rounded-full bg-white"
-              src="/logo512.png"
+              src="https://raw.githubusercontent.com/iAmTheBest4222/ravoraventures/main/frontend/public/logo512.png"
               style={{ display: "inline-block" }}
             />
             <motion.div
