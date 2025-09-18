@@ -12,6 +12,7 @@ import ForInvestors from './pages/ForInvestors';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import ProgramDetails from './pages/ProgramDetails';
+import Ravorav from './pages/Ravorav';
 
 // Components
 import Header from './components/common/Header';
@@ -36,6 +37,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
               <Route path="/program-details" element={<ProgramDetails />} />
+              <Route path="/ravorav" element={<Ravorav />} />
           </Routes>
         </main>
         <Footer />
