@@ -41,11 +41,17 @@ const Header = () => {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
+          {/* Logo + Title */}
+          <Link to="/" className="flex-shrink-0 flex items-center gap-2">
+            <img
+              src={process.env.PUBLIC_URL + '/ravora.svg'}
+              alt="Ravora Ventures Logo"
+              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 drop-shadow rounded-full bg-white"
+              style={{ display: 'inline-block' }}
+            />
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-charcoal tracking-tight px-2 md:px-0"
+              className="text-xl sm:text-2xl md:text-3xl font-bold text-navy-blue tracking-tight px-2 md:px-0"
               style={{ wordBreak: 'break-word', lineHeight: 1.1 }}
             >
               Ravora Ventures
