@@ -129,176 +129,31 @@ const Contact = () => {
 
       {/* Contact Form and Info */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <Card className="p-8">
-                <h2 className="text-3xl font-bold text-charcoal mb-6">Send us a Message</h2>
-                
-                {submitStatus === 'success' && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="bg-success-green/10 border border-success-green text-success-green px-4 py-3 rounded-lg mb-6 flex items-center"
-                  >
-                    <CheckCircleIcon className="h-5 w-5 mr-2" />
-                    Thank you! Your message has been sent successfully.
-                  </motion.div>
-                )}
-
-                {submitStatus === 'error' && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="bg-warning-red/10 border border-warning-red text-warning-red px-4 py-3 rounded-lg mb-6 flex items-center"
-                  >
-                    <ExclamationTriangleIcon className="h-5 w-5 mr-2" />
-                    Sorry, there was an error sending your message. Please try again.
-                  </motion.div>
-                )}
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-2">
-                        Full Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full px-4 py-3 border border-soft-gray rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-200"
-                        placeholder="Enter your full name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-2">
-                        Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full px-4 py-3 border border-soft-gray rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-200"
-                        placeholder="Enter your email"
-                      />
-                    </div>
+        <div className="flex flex-col items-center justify-center w-full">
+          <div className="w-full max-w-2xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-4xl font-bold text-center text-charcoal mb-8">Get in Touch</h2>
+            <p className="text-lg text-medium-gray text-center leading-relaxed mb-8 break-words">
+              We're here to help you succeed. Whether you're an entrepreneur looking for funding or an investor seeking opportunities, we'd love to connect with you.<br />
+              Please reach out to us directly at <a href="mailto:info@ravoraventures.com" className="text-orange font-semibold underline break-all">info@ravoraventures.com</a>.
+            </p>
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-8">
+              {contactInfo.map((info, index) => (
+                <Card key={index} className="flex-1 p-6 flex flex-col items-center text-center shadow-md min-w-0 w-full max-w-lg min-h-[220px] md:min-h-[260px] break-words">
+                  <div className="w-14 h-14 bg-orange/10 rounded-full flex items-center justify-center mb-4">
+                    <info.icon className="h-7 w-7 text-orange" />
                   </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-charcoal mb-2">
-                        Company Name
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-soft-gray rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-200"
-                        placeholder="Enter your company name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="type" className="block text-sm font-medium text-charcoal mb-2">
-                        Inquiry Type *
-                      </label>
-                      <select
-                        id="type"
-                        name="type"
-                        value={formData.type}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full px-4 py-3 border border-soft-gray rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-200"
-                      >
-                        <option value="startup">Startup Application</option>
-                        <option value="investor">Investor Inquiry</option>
-                        <option value="partnership">Partnership</option>
-                        <option value="general">General Inquiry</option>
-                      </select>
-                    </div>
+                  <h3 className="text-lg font-semibold text-charcoal mb-2 break-words">{info.title}</h3>
+                  <div className="space-y-1 w-full">
+                    {info.details.map((detail, detailIndex) => (
+                      <p key={detailIndex} className="text-medium-gray break-words text-sm w-full whitespace-pre-line">{detail}</p>
+                    ))}
                   </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-charcoal mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      rows={6}
-                      className="w-full px-4 py-3 border border-soft-gray rounded-lg focus:ring-2 focus:ring-orange focus:border-transparent transition-all duration-200"
-                      placeholder="Tell us about your project, idea, or how we can help you..."
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    size="lg"
-                    className="w-full"
-                    loading={isSubmitting}
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
-                    <ArrowRightIcon className="ml-2 h-5 w-5" />
-                  </Button>
-                </form>
-              </Card>
-            </motion.div>
-
-            {/* Contact Information */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-3xl font-bold text-charcoal mb-6">Get in Touch</h2>
-                  <p className="text-lg text-medium-gray leading-relaxed mb-8">
-                    We're here to help you succeed. Whether you're an entrepreneur looking for funding 
-                    or an investor seeking opportunities, we'd love to connect with you.
-                  </p>
-                </div>
-
-                <div className="space-y-6">
-                  {contactInfo.map((info, index) => (
-                    <Card key={index} className="p-6">
-                      <div className="flex items-start">
-                        <div className="w-12 h-12 bg-orange/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                          <info.icon className="h-6 w-6 text-orange" />
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-semibold text-charcoal mb-2">{info.title}</h3>
-                          <div className="space-y-1">
-                            {info.details.map((detail, detailIndex) => (
-                              <p key={detailIndex} className="text-medium-gray">{detail}</p>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
+                </Card>
+              ))}
+            </div>
+            <span className="inline-block bg-orange/10 text-orange px-6 py-3 rounded-full font-medium text-center">
+              Business Hours: Mon-Fri 9:00 AM - 6:00 PM IST
+            </span>
           </div>
         </div>
       </section>
@@ -320,7 +175,6 @@ const Contact = () => {
               Common questions about our investment process and partnership opportunities.
             </p>
           </motion.div>
-
           <div className="space-y-6">
             {faqs.map((faq, index) => (
               <Card key={index} className="p-6">
@@ -336,15 +190,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Visit Our Office section removed as per requirements */}
-        </div>
-      </section>
-
-      {/* CTA Section */}
-  {/* CTA Section removed as per requirements. Only Contact Us CTA remains elsewhere. */}
     </>
   );
 };
