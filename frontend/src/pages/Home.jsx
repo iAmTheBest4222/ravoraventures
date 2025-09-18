@@ -65,15 +65,7 @@ const Home = () => {
             ))}
           </motion.div>
 
-            {/* View Our Details Button */}
-            <div className="mt-8 flex justify-center">
-              <a
-                href="/program-details"
-                className="inline-block px-8 py-3 rounded-full bg-orange text-white font-semibold text-lg shadow-md hover:bg-navy-blue transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2"
-              >
-                View Our Details
-              </a>
-            </div>
+            {/* View Our Details Button removed as per user request */}
         </div>
 
         {/* Scroll Indicator */}

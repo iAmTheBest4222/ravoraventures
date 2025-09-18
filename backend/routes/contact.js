@@ -71,8 +71,14 @@ router.post('/', contactValidation, async (req, res) => {
 
     await contact.save();
 
-    // TODO: Send email notification to admin
-    // TODO: Send auto-reply to user
+    // Send email notification to admin
+    const { sendContactEmail } = require('../utils/mailer');
+    try {
+      await sendContactEmail({ name, email, company, type, message });
+    } catch (emailError) {
+      console.error('Error sending contact email:', emailError);
+      // Optionally, you can still return success but log the error
+    }
 
     res.status(201).json({
       status: 'success',
