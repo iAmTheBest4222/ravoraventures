@@ -46,8 +46,8 @@ const Header = () => {
             <img
               alt="Ravora Ventures Logo"
               className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 drop-shadow rounded-full bg-white"
-              src="/ravora-logo.png"
-              style={{ display: 'inline-block' }}
+              src="/logo512.png"
+              style={{ display: "inline-block" }}
             />
             <motion.div
               whileHover={{ scale: 1.05 }}
