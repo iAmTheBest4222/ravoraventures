@@ -11,6 +11,7 @@ import ForStartups from './pages/ForStartups';
 import ForInvestors from './pages/ForInvestors';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import ProgramDetails from './pages/ProgramDetails';
 
 // Components
 import Header from './components/common/Header';
@@ -34,6 +35,7 @@ function App() {
             <Route path="/investors" element={<ForInvestors />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+              <Route path="/program-details" element={<ProgramDetails />} />
           </Routes>
         </main>
         <Footer />
