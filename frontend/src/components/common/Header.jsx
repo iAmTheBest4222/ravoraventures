@@ -44,7 +44,7 @@ const Header = () => {
           {/* Logo + Title */}
           <Link to="/" className="flex-shrink-0 flex items-center gap-2">
             <img
-              src={process.env.PUBLIC_URL + '/ravora.svg'}
+              src={process.env.PUBLIC_URL + '/ravora-logo.svg'}
               alt="Ravora Ventures Logo"
               className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 drop-shadow rounded-full bg-white"
               style={{ display: 'inline-block' }}
